@@ -1,4 +1,4 @@
-$(function () {
+/*$(function () {
     // カレンダー
     $(function () {
         $('input[name="date"]').datepicker({
@@ -6,7 +6,7 @@ $(function () {
         });
     });
 });
-
+*/
 
 $(function () {
     // 送信
