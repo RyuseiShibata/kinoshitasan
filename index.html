@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カロリー計算フォーム</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+</head>
+
+<body>
+    <form class="w-75 mx-auto">
+
+        <p class="mt-3">以下にパーソナル情報を入力して送信ボタンを押してください</p>
+        
+        <p class="mt-3 mb-0 font-weight-bold">年齢</p>
+        <div id="form-name" class="mt-0">
+        <input type="number" id="age" name="age" min="0" max="100">
+        </div>
+        
+        <p class="mt-3 mb-0 font-weight-bold">性別</p>
+        <div id="form-name" class="mt-0">
+        <label><input type="radio" name="sex" value="men" checked />男性</label>
+        <label><input type="radio" name="sex" value="women" />女性</label>
+        <!--<input class="form-control" type="radio" name="sex" value="men" checked>男性
+　　　　　　　　　　　　　　　　<input class="form-control" type="radio" name="sex" value="women" >女性 -->
+        </div>
+        
+        <p class="mt-3 mb-0 font-weight-bold">身長</p>
+        <div id="form-name" class="mt-0">
+        <input type="number" id="height" name="height" min="100" max="250">
+        </div>
+
+        <p class="mt-3 mb-0 font-weight-bold">体重</p>
+        <div id="form-name" class="mt-0">
+        <input type="number" id="weight" name="weight" min="30" max="200">
+        </div>
+        
+        <p class="mt-3 mb-0 font-weight-bold">運動強度</p>
+        <div id="form-name" class="mt-0">
+        <select name="strength" id="strength">
+            <option value=1.2 selected>運動を全くしない</option>
+            <option value=1.375>週１~2回の軽い運動</option>
+            <option value=1.55>週2~3回の適度な運動</option>
+            <option value=1.725>週4~5回のハードな運動</option>
+        </select>
+        </div>
+
+        <input type="submit" class="mt-4 btn btn-primary" value="送信">
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+    <script src="liff.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
