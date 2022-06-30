@@ -5,6 +5,7 @@ $(function () {
             dateFormat: 'yy/mm/dd',
         });
     });
+});
 
 
 $(function () {
